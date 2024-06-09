@@ -5,7 +5,8 @@ public class Product {
     private int price;
     private int count;
     private int location;   // (1 ~ 4)
-    Product(int price, int count, int location) {
+    Product(String name, int price, int count, int location) {
+        this.name = name;
         this.price = price;
         this.count = count;
         this.location = location;
@@ -29,7 +30,7 @@ public class Product {
         this.price = price;
     }
     public void setCount(int count) {
-        this.count = count;
+        this.count += count;
     }
     public void setLocation(int location) {
         this.location = location;
@@ -38,5 +39,8 @@ public class Product {
     @Override
     public String toString() {
         return String.format("  Price: %d  Count: %d  Location: %d", price, count, location);
+    }
+    public String toStringForClient() {
+        return String.format("  Price: %d  Count: %d", price, count);
     }
 }
