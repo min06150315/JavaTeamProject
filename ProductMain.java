@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class OrderMain {
+public class ProductMain {
     public static void main(String[] args) {
         // product.txt 파일 받아드려서 hashmap에 저장\
         OrderSystem o = new OrderSystem();
