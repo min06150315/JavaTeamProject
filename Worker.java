@@ -9,7 +9,7 @@ public class Worker {
     private boolean ing;
 
     public Worker(){// 이 class의 object를 만든 순간 데이터를 가지고 있다.
-        String file = "work.txt";
+        String file = "order.txt";
         Scanner inputStream = null;
         try{
             inputStream = new Scanner(new File(file));
