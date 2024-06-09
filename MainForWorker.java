@@ -2,7 +2,7 @@ package JavaTeamProject;
 
 import java.util.Scanner;
 
-public class MainForWorker {
+public class Main {
     public static void main(String[] args) {
         Worker s = new Worker();
         Scanner k = new Scanner(System.in);
