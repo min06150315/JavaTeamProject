@@ -1,0 +1,4 @@
+bag 12000 1 1
+shoose 20000 2 2
+bread 5000 10 3
+icecream 1000 4 3
