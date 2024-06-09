@@ -1,0 +1,4 @@
+Candy 250 100 1
+Chocolate 1000 200 1
+Water 500 150 2
+Ramen 1000 50 3
