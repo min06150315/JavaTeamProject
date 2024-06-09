@@ -9,7 +9,7 @@ public class Worker {
     private boolean ing;
 
     public Worker(){// 이 class의 object를 만든 순간 데이터를 가지고 있다.
-        String file = "order.txt";
+        String file = "order1.txt";
         Scanner inputStream = null;
         try{
             inputStream = new Scanner(new File(file));
@@ -22,7 +22,7 @@ public class Worker {
             String line = inputStream.nextLine();
             String []data = line.split(" ");
             //Order에 넣자.
-            Order item = new Order(data[0], Double.parseDouble(data[1]), Double.parseDouble(data[2]),Integer.parseInt(data[3]));
+            Order item = new Order(data[0], Integer.parseInt(data[1]), Integer.parseInt(data[2]),Integer.parseInt(data[3]));
             //HashMap w에 넣음
             w.put(data[0],item);
 
@@ -31,22 +31,27 @@ public class Worker {
         //여기 까지 오면 파일에 있는 건 다 받아드린 것
     }
     public int clearWork(String name) {//일 했다면 list에서 지워주기
-        if (w.isEmpty()) {
+        if (w.isEmpty()) {//처음 부터 할 일이 없었다면
             System.out.println("All Cleared.");
             return 1;
-        } else {
+        } else {//할 일이 있을 때
             int i = 0;
             for (String item : w.keySet()) {
                 if (name.equals(item)) {
                     System.out.println("Clear");
                     w.remove(item);
                     i = 0;
+                    if(w.isEmpty()){//만약 방금 없앤게 마지막이였다면 끝내야지
+                        System.out.println("All Cleared.");
+                        return 1;
+                    }
                     break;
                 }
                 i = 1;
             }
             if(i == 1){
                 System.out.println("Not Order item.");
+
             }
         }
         return 0;
@@ -55,7 +60,7 @@ public class Worker {
     public void ShowWorkList() {
         int i = 1;
         System.out.println("test");
-        System.out.println("i)   name                price     Order number     where ");
+        System.out.println("i)   name        price     Order number     where ");
         for (String item : w.keySet()) {
             System.out.println(i++ + ") " +w.get(item).toString());
         }
