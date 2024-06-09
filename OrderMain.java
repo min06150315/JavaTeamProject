@@ -4,11 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class OrderMain {
     public static void main(String[] args) {
-        // items.txt 파일 받아드려서 hashmap에 저장\
+        // product.txt 파일 받아드려서 hashmap에 저장\
         OrderSystem o = new OrderSystem();
-        String filename = "./src/JavaTeamProject/textfiles/items.txt";
+        String filename = "./src/JavaTeamProject/textfiles/product.txt";
         Scanner inputStream = null;
         try {
             inputStream = new Scanner(new File(filename));
