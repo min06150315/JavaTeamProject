@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class MainForProduct {
     public static void main(String[] args) {
-        // product.txt 파일 받아드려서 hashmap에 저장\
+        // product.txt 파일 받아드려서 hashmap에 저장
         OrderSystem o = new OrderSystem();
         String filename = "./src/JavaTeamProject/textfiles/product.txt";
         Scanner inputStream = null;
@@ -22,7 +22,7 @@ public class MainForProduct {
             int count = inputStream.nextInt();
             int location = inputStream.nextInt();
 
-            Product new_product = new Product(price, count, location);
+            Product new_product = new Product(name, price, count, location);
             o.addHashMap(name, new_product);
         }
         o.printHashMap();
