@@ -1,30 +1,31 @@
 package JavaTeamProject;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+// 회사를 위한 Main 시스템
 public class MainForProduct {
     public static void main(String[] args) {
-        // product.txt 파일 받아드려서 hashmap에 저장
+        Scanner s = new Scanner(System.in);
         OrderSystem o = new OrderSystem();
-        String filename = "./src/JavaTeamProject/textfiles/product.txt";
-        Scanner inputStream = null;
-        try {
-            inputStream = new Scanner(new File(filename));
-        } catch (FileNotFoundException e) {
-            System.out.println("Error opening the file " + filename);
-            System.exit(0);
+        int menu;
+        while (true) {
+            System.out.print("\n1.Item List 2.Sales Statement 3.Delivery Check Message 4.Quit > ");
+            menu = s.nextInt();
+            switch (menu) {
+                case 1:
+                    o.printHashMap();
+                    break;
+                case 2:
+                    o.MakeSalesStatement();
+                    break;
+                case 3:
+                    // o.SendMessage();
+                    break;
+                case 4:
+                    return;
+                default:
+                    break;
+            }
         }
-        while (inputStream.hasNext()) {
-            String name = inputStream.next();
-            int price = inputStream.nextInt();
-            int count = inputStream.nextInt();
-            int location = inputStream.nextInt();
-
-            Product new_product = new Product(name, price, count, location);
-            o.addHashMap(name, new_product);
-        }
-        o.printHashMap();
     }
 }
