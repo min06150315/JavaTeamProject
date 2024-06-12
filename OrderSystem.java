@@ -103,8 +103,4 @@ public class OrderSystem {
     void MakeSalesStatement() {
 
     }
-
-    void SendMessage() {
-
-    }
 }
