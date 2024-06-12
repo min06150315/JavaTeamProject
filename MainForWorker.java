@@ -8,27 +8,28 @@ public class MainForWorker {
         Scanner k = new Scanner(System.in);
         int choice;
         while (true) {
-            System.out.print("1. showList 2. Where item 3. Clear work");
+            System.out.print("\n1.Show List 2.Item Location 3.Clear Work > ");
 
             choice = k.nextInt();
 
             if (choice == 1) {
                 s.ShowWorkList();
-            }else if(choice == 2){
-                System.out.println("If you want to know Where is item, Enter num (0r not need, Enter -1): ");
+            }else if (choice == 2){
+                System.out.print("If you want to know Where is item, Enter num (0r not need, Enter -1): ");
                 int where = k.nextInt();
-                s.ShowWhere(where);
+                s.ShowLocation(where);
             } else if (choice == 3) {
                 k.nextLine();
-                System.out.println("Enter clear order name: ");
+                System.out.print("Enter clear order name: ");
                 String what = k.nextLine();
-                int result = s.clearWork(what);
-                if(result == 1){
+                int result = s.ClearWork(what);
+                if (result == 1) {
+                    // 일을 다 끝냈다는 것의 확인 하기 위해서 txt파일 만들기
+                    s.SendMessage();
+                    // s.PrintStateEndOrNot();
                     break;
                 }
             }
-
         }
-        //일을 다 했다는 것 => 배송시작 즉, 영수증 주고 난 돈 받고~~~~
     }
 }
