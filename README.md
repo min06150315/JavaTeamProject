@@ -1,4 +1,4 @@
-<h2><b>JAVA Team project</b></h2><br>
+<h2>JAVA Team project</h2><br>
 <h3>1.Project title</h3><br>
   Commodity Management System<br><br>
 <h3>2.Project members</h3><br>
