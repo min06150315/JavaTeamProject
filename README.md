@@ -35,6 +35,21 @@
 
   When the to-do list is erased, the execution is over.<br><br>
 
-<h3>7.including screen shots of program execution with explanation</h3><br>
-	there are exist this github! <br>
-
+<h3>7.including screen shots of program execution with explanation</h3><be>
+product.txt<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Product1.png"><br>
+MainClient<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Client1.png"><br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Client2.png"><br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Client3.png"><br>
+order.txt<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Order.png"><br>
+product.txt<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Product2.png"><br>
+receipt.txt<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Receipt.png"><br>
+MainWorker<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Worker1.png"><br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Worker2.png"><br>
+message.txt<br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/Message.png"><br>
