@@ -1,2 +1,4 @@
-Water 850 10 1
-Candy 500 30 3
+Water 850 50 1
+Ramen 1800 50 2
+Shoes 20000 5 2
+Bread 5000 10 3
