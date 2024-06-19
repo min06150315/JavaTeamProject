@@ -14,7 +14,7 @@ public class MainForWorker {
 
             if (choice == 1) {
                 s.ShowWorkList();
-            }else if (choice == 2){
+            } else if (choice == 2) {
                 System.out.print("If you want to know Where is item, Enter num (0r not need, Enter -1): ");
                 int where = k.nextInt();
                 s.ShowLocation(where);
