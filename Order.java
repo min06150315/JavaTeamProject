@@ -17,22 +17,20 @@ public class Order {
     public int getPrice() {
         return price;
     }
-    public int getNum(){//주문 시 재고량 관리를 위해
+    public int getNum() {       //주문 시 재고량 관리를 위해
         return num;
     }
-    public void setNum(int num){//주문 시 재고량 관리를 위해
+    public void setNum(int num) {   //주문 시 재고량 관리를 위해
         this.num = num;
     }
-    public String toString(){//주문 시 재고량 관리를 위해
-        return String.format("%-11s\t%-5d\t%-12d\t%-8d", name, price, num, location);
-    }
-    public String toStringForClient(){//고객을 위해
-        return String.format("%-11s\t%-5d\t%-12d", name, price, num);
-    }
-    public Order getOrder(){//
-        return new Order(name, price, num, location);
-    }
-    public int getLocation(){//
+    public int getLocation() {
         return location;
     }
+    public String toString() {      //주문 시 재고량 관리를 위해
+        return String.format("%-11s\t%-5d\t%-12d\t%-8d", name, price, num, location);
+    }
+    public String toStringForClient() {     //고객을 위해
+        return String.format("%-11s\t%-5d\t%-12d", name, price, num);
+    }
+
 }
