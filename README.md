@@ -1,16 +1,16 @@
 <h2><b>JAVA Team project</b></h2><br>
 <h3>1.Project title</h3><br>
-  Commodity Management System<br>
+  Commodity Management System<br><br>
 <h3>2.Project members</h3><br>
-  22300806 허선희, 22300265 민경빈<br>
+  22300806 허선희, 22300265 민경빈<br><br>
 <h3>3.Project description </h3><br>
   This program implements the process of the customer's choice of goods and the customer's arrival of the departure text.<br><br>
 
 <h3>4.UML diagram of classes and interfaces</h3><br>
-<img src = ""><br>
+<img src = ""><br><br>
 
 <h3>5.github link</h3><br>
-  https://github.com/min06150315/JavaTeamProject<br>
+  https://github.com/min06150315/JavaTeamProject<br><br>
 
 <h3>6.User's guide( how to use your program)</h3><br>
   It takes two users.<br><br>
