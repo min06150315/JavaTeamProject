@@ -6,17 +6,17 @@ import java.util.Scanner;
 public class Worker {
     private HashMap<String, Order> w = new HashMap<>();
 
-    public Worker(){// 이 class의 object를 만든 순간 데이터를 가지고 있다.
+    public Worker() {// 이 class의 object를 만든 순간 데이터를 가지고 있다.
         String file = "./src/JavaTeamProject/textfiles/order.txt";
         Scanner inputStream = null;
-        try{
+        try {
             inputStream = new Scanner(new File(file));
         } catch (FileNotFoundException e) {
             System.out.println("Fail to open the file!");
             System.exit(0);
         }
         //파일에 줄이 끝날 때까지 받아드리면서 데이터화하자.
-        while(inputStream.hasNextLine()){
+        while (inputStream.hasNextLine()) {
             String line = inputStream.nextLine();
             String []data = line.split(" ");
             //Order에 넣자.
@@ -112,7 +112,7 @@ public class Worker {
             System.err.println("Error");
         }
     }
-    void SendMessage() {
+    public void SendMessage() {
         String fileName = "./src/JavaTeamProject/textfiles/message.txt";
 
         try (FileWriter fileWriter = new FileWriter(fileName);
