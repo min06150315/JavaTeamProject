@@ -99,8 +99,4 @@ public class OrderSystem {
             e.printStackTrace();
         }
     }
-
-    void MakeSalesStatement() {
-
-    }
 }
