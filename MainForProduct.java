@@ -9,19 +9,16 @@ public class MainForProduct {
         OrderSystem o = new OrderSystem();
         int menu;
         while (true) {
-            System.out.print("\n1.Item List 2.Sales Statement 3.Delivery Check Message 4.Quit > ");
+            System.out.print("\n1.Item List 2.Delivery Check Message 3.Quit > ");
             menu = s.nextInt();
             switch (menu) {
                 case 1:
                     o.printHashMap();
                     break;
                 case 2:
-                    o.MakeSalesStatement();
-                    break;
-                case 3:
                     // o.SendMessage();
                     break;
-                case 4:
+                case 3:
                     return;
                 default:
                     break;
