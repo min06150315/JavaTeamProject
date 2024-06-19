@@ -7,7 +7,7 @@
   This program implements the process of the customer's choice of goods and the customer's arrival of the departure text.<br><br>
 
 <h3>4.UML diagram of classes and interfaces</h3><br>
-<img src = ""><br><br>
+<img src = "https://github.com/min06150315/JavaTeamProject/blob/main/images/UML.png"><br><br>
 
 <h3>5.github link</h3><br>
   https://github.com/min06150315/JavaTeamProject<br><br>
