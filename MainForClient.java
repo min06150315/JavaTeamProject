@@ -88,7 +88,6 @@ public class MainForClient {
                 System.out.println("Order is complete!");
                 break;
             }
-
         }
 
         // 유저의 주문에 따라 product.txt 의 물품 개수 변경
